@@ -1,0 +1,520 @@
+/* Final mobile polish. This file is loaded last so mobile fixes are easy to edit. */
+
+@media (max-width: 520px) {
+  * {
+    min-width: 0;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .page,
+  .result-page,
+  .prediction-page {
+    max-width: 100% !important;
+    padding: 12px !important;
+  }
+
+  .card {
+    border-radius: 22px !important;
+  }
+
+  .landing-card,
+  .quiz-card,
+  .review-card,
+  .result-card,
+  .prediction-card,
+  .next-card,
+  .next-steps {
+    width: 100% !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .landing-card {
+    min-height: auto !important;
+    padding-top: 44px !important;
+    padding-bottom: 26px !important;
+  }
+
+  .brand-logo {
+    width: 150px !important;
+    height: 150px !important;
+  }
+
+  .brand-mark svg {
+    width: 38px !important;
+    height: 38px !important;
+  }
+
+  .brand-mark strong {
+    font-size: 24px !important;
+    margin-top: 6px !important;
+  }
+
+  .brand-mark small {
+    font-size: 10px !important;
+  }
+
+  .book-lines {
+    width: 50px !important;
+    padding: 4px 8px !important;
+    gap: 5px !important;
+    border-width: 2px !important;
+  }
+
+  .book-lines span {
+    height: 2px !important;
+  }
+
+  .tagline {
+    margin: 42px 0 20px !important;
+    font-size: clamp(21px, 6vw, 25px) !important;
+    line-height: 1.24 !important;
+    letter-spacing: -0.7px !important;
+    white-space: normal !important;
+  }
+
+  .lead {
+    max-width: 100% !important;
+    font-size: 16px !important;
+    line-height: 1.55 !important;
+    letter-spacing: -0.25px !important;
+    text-wrap: pretty;
+  }
+
+  .info-panel {
+    margin-top: 28px !important;
+    padding: 22px 18px !important;
+    border-radius: 14px !important;
+  }
+
+  .info-panel h2 {
+    font-size: 20px !important;
+    line-height: 1.25 !important;
+    letter-spacing: -0.5px !important;
+    margin-bottom: 16px !important;
+  }
+
+  .info-panel ul {
+    gap: 14px !important;
+  }
+
+  .info-panel li {
+    grid-template-columns: 20px 1fr !important;
+    gap: 10px !important;
+    font-size: 15px !important;
+    line-height: 1.45 !important;
+    letter-spacing: -0.15px !important;
+  }
+
+  .section-grid {
+    margin-top: 18px !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 8px !important;
+  }
+
+  .section-grid div {
+    padding: 9px 10px !important;
+    border-radius: 10px !important;
+  }
+
+  .section-grid b {
+    font-size: 13px !important;
+  }
+
+  .section-grid span {
+    font-size: 12px !important;
+  }
+
+  .section-grid small {
+    font-size: 11px !important;
+  }
+
+  .primary-btn,
+  .secondary-btn,
+  .home-btn {
+    min-height: 58px !important;
+    border-radius: 14px !important;
+    font-size: 18px !important;
+    line-height: 1.2 !important;
+    gap: 10px !important;
+  }
+
+  .home-btn {
+    margin-top: 28px !important;
+  }
+
+  .top-row {
+    align-items: flex-start !important;
+    gap: 12px !important;
+  }
+
+  .back {
+    font-size: 16px !important;
+    line-height: 1.2 !important;
+    white-space: nowrap !important;
+  }
+
+  .top-row strong {
+    font-size: 15px !important;
+    line-height: 1.25 !important;
+    text-align: right !important;
+  }
+
+  .timer-line {
+    margin-top: 16px !important;
+    min-height: 38px !important;
+    padding: 8px 12px !important;
+    font-size: 13px !important;
+    line-height: 1.25 !important;
+    justify-content: center !important;
+    text-align: center !important;
+    white-space: normal !important;
+  }
+
+  .quiz-meta {
+    margin-top: 20px !important;
+    gap: 10px !important;
+    align-items: center !important;
+  }
+
+  .quiz-meta span {
+    max-width: 68% !important;
+    min-height: 36px !important;
+    padding: 8px 12px !important;
+    font-size: 13px !important;
+    line-height: 1.2 !important;
+    text-align: center !important;
+  }
+
+  .quiz-meta p {
+    font-size: 14px !important;
+    line-height: 1.2 !important;
+    white-space: nowrap !important;
+  }
+
+  .progress {
+    height: 10px !important;
+  }
+
+  .skill-line {
+    margin-top: 14px !important;
+    gap: 7px !important;
+  }
+
+  .skill-line b,
+  .skill-line span,
+  .review-section-summary span {
+    padding: 6px 10px !important;
+    font-size: 11px !important;
+    line-height: 1.2 !important;
+  }
+
+  .question {
+    margin: 20px 0 22px !important;
+    font-size: clamp(19px, 5.3vw, 23px) !important;
+    line-height: 1.38 !important;
+    letter-spacing: -0.45px !important;
+    overflow-wrap: anywhere !important;
+    word-break: normal !important;
+  }
+
+  .options {
+    gap: 12px !important;
+  }
+
+  .option {
+    min-height: 64px !important;
+    padding: 12px 14px !important;
+    gap: 12px !important;
+    border-width: 2px !important;
+    border-radius: 14px !important;
+    font-size: 16px !important;
+    line-height: 1.35 !important;
+    align-items: flex-start !important;
+  }
+
+  .option b {
+    font-weight: 700 !important;
+    overflow-wrap: anywhere !important;
+    word-break: normal !important;
+  }
+
+  .radio {
+    width: 24px !important;
+    height: 24px !important;
+    border-width: 3px !important;
+    margin-top: 2px !important;
+  }
+
+  .radio::after {
+    width: 11px !important;
+    height: 11px !important;
+  }
+
+  .dual-actions {
+    margin-top: 28px !important;
+    gap: 10px !important;
+  }
+
+  .dual-actions .primary-btn,
+  .dual-actions .secondary-btn {
+    min-height: 58px !important;
+    font-size: 16px !important;
+    border-radius: 14px !important;
+    padding: 8px !important;
+  }
+
+  .dual-actions svg {
+    width: 20px !important;
+    height: 20px !important;
+  }
+
+  .review-card h1 {
+    margin-bottom: 24px !important;
+    font-size: 24px !important;
+    line-height: 1.2 !important;
+  }
+
+  .review-line span,
+  .review-line b {
+    font-size: 16px !important;
+    line-height: 1.25 !important;
+  }
+
+  .review-section-summary {
+    margin-top: 18px !important;
+    gap: 7px !important;
+  }
+
+  .exam-number-grid {
+    margin-top: 20px !important;
+    grid-template-columns: repeat(8, minmax(0, 1fr)) !important;
+    gap: 6px !important;
+  }
+
+  .exam-number-grid button {
+    min-height: 34px !important;
+    border-radius: 8px !important;
+    font-size: 12px !important;
+  }
+
+  .result-card h1,
+  .prediction-card h1 {
+    font-size: 25px !important;
+    line-height: 1.18 !important;
+    margin: 22px 0 14px !important;
+  }
+
+  .result-card > p,
+  .prediction-card > p {
+    font-size: 16px !important;
+    line-height: 1.4 !important;
+  }
+
+  .icon-bubble {
+    width: 72px !important;
+    height: 72px !important;
+  }
+
+  .icon-bubble svg {
+    width: 36px !important;
+    height: 36px !important;
+  }
+
+  .score-hero {
+    min-height: 210px !important;
+    margin-top: 30px !important;
+    border-radius: 18px !important;
+    padding: 22px 14px !important;
+  }
+
+  .score-hero span,
+  .score-hero em {
+    font-size: 17px !important;
+    line-height: 1.3 !important;
+    text-align: center !important;
+  }
+
+  .score-hero strong {
+    font-size: 68px !important;
+    letter-spacing: -3px !important;
+  }
+
+  .score-hero b {
+    font-size: 18px !important;
+    line-height: 1.35 !important;
+    text-align: center !important;
+  }
+
+  .result-card h2,
+  .prediction-card h2,
+  .next-steps h2,
+  .next-card h2 {
+    font-size: 22px !important;
+    line-height: 1.25 !important;
+  }
+
+  .subtests article,
+  .major-list article {
+    padding: 18px !important;
+    border-radius: 14px !important;
+  }
+
+  .sub-head {
+    grid-template-columns: 26px 1fr auto auto !important;
+    gap: 8px !important;
+    align-items: start !important;
+  }
+
+  .sub-head svg {
+    width: 24px !important;
+    height: 24px !important;
+  }
+
+  .sub-head h3 {
+    font-size: 15px !important;
+    line-height: 1.25 !important;
+  }
+
+  .sub-head strong {
+    font-size: 24px !important;
+  }
+
+  .sub-head b {
+    font-size: 18px !important;
+  }
+
+  .sub-info {
+    margin-top: 16px !important;
+    font-size: 13px !important;
+    line-height: 1.3 !important;
+    align-items: flex-start !important;
+  }
+
+  .next-card {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+    padding-top: 28px !important;
+    padding-bottom: 28px !important;
+  }
+
+  .next-card p,
+  .next-steps ul,
+  .major-list p,
+  .major-list li,
+  .disclaimer {
+    font-size: 13px !important;
+    line-height: 1.55 !important;
+  }
+
+  .green-icon {
+    width: 52px !important;
+    height: 52px !important;
+    padding: 13px !important;
+  }
+
+  .score-pill {
+    max-width: 100% !important;
+    min-height: 36px !important;
+    padding: 8px 16px !important;
+    font-size: 14px !important;
+    text-align: center !important;
+    white-space: normal !important;
+  }
+
+  .serious-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 10px !important;
+  }
+
+  .stats div {
+    min-height: 92px !important;
+  }
+
+  .stats b {
+    font-size: 22px !important;
+  }
+
+  .stats span {
+    font-size: 12px !important;
+  }
+
+  .major-list header {
+    grid-template-columns: 18px 1fr auto !important;
+    gap: 9px !important;
+  }
+
+  .major-list h3 {
+    font-size: 16px !important;
+    line-height: 1.3 !important;
+  }
+
+  .major-list header span {
+    padding: 5px 10px !important;
+    font-size: 11px !important;
+    white-space: nowrap !important;
+  }
+
+  .min-score {
+    grid-template-columns: 1fr !important;
+    gap: 8px !important;
+    padding: 14px !important;
+    font-size: 13px !important;
+  }
+
+  .min-score b {
+    font-size: 18px !important;
+  }
+
+  .min-score em {
+    font-size: 12px !important;
+    overflow-wrap: anywhere !important;
+  }
+}
+
+@media (max-width: 380px) {
+  .page,
+  .result-page,
+  .prediction-page {
+    padding: 10px !important;
+  }
+
+  .landing-card,
+  .quiz-card,
+  .review-card,
+  .result-card,
+  .prediction-card,
+  .next-card,
+  .next-steps {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .tagline {
+    font-size: 20px !important;
+  }
+
+  .lead,
+  .info-panel li {
+    font-size: 14px !important;
+  }
+
+  .section-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .question {
+    font-size: 18px !important;
+  }
+
+  .option {
+    font-size: 15px !important;
+  }
+
+  .exam-number-grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+  }
+}
