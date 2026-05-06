@@ -4,5 +4,6 @@ import App from './App.jsx';
 import './styles.css';
 import './responsive.css';
 import './footer.css';
+import './mobile.css';
 
 createRoot(document.getElementById('root')).render(<App />);
