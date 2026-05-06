@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <circle cx="256" cy="256" r="248" fill="#17175f"/>
+  <g fill="none" stroke="#ffe28a" stroke-width="15" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M137 133 256 92l119 41-119 42-119-42Z"/>
+    <path d="M179 150v54h154v-54"/>
+    <path d="M362 144v45"/>
+    <circle cx="362" cy="205" r="14"/>
+    <path d="M119 228h248c11 0 19 8 19 19s-8 19-19 19H141c-22 0-40-18-40-40s18-40 40-40h218"/>
+    <path d="M141 240h196"/>
+    <path d="M174 265v54h205c21 0 38 17 38 38s-17 38-38 38H141"/>
+    <path d="M113 319h250"/>
+    <path d="M141 355h214"/>
+    <path d="M188 292h48"/>
+    <path d="M254 292h48"/>
+    <path d="M216 248h28"/>
+    <path d="M260 248h64"/>
+  </g>
+  <text x="256" y="346" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="78" font-weight="700" fill="#ffe28a">USK</text>
+  <text x="256" y="398" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="34" fill="#ffe28a" letter-spacing="1.4">MAJORMATCH</text>
+</svg>
