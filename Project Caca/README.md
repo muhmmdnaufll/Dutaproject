@@ -1,16 +1,15 @@
 # USK MajorMatch
 
-Website tryout dan prediksi kelayakan jurusan Universitas Syiah Kuala dengan UI/UX yang dibuat mengikuti screenshot referensi.
+Website tryout dan prediksi kelayakan jurusan Universitas Syiah Kuala.
 
 ## Fitur
 
-- Landing page seperti screenshot
+- Landing page
 - Quiz 30 soal: Mathematics, Science, Language
 - Pilih jawaban, previous/next, progress, dan jumlah answered
 - Halaman review 30 nomor
 - Halaman hasil dengan skor total, grade, dan rincian subtes
 - Halaman prediksi jurusan
-- Static site: tidak butuh framework dan siap deploy
 
 ## Struktur
 
@@ -42,11 +41,3 @@ Buka `http://localhost:5173`.
 3. Buka **Settings > Pages**.
 4. Pilih **Source: GitHub Actions**.
 5. Workflow `.github/workflows/pages.yml` akan deploy otomatis.
-
-## Deploy Netlify
-
-Drag-and-drop folder ini ke Netlify, atau hubungkan repository. Publish directory: `.`
-
-## Deploy Vercel
-
-Import repository ke Vercel. Karena ini static site, Vercel bisa langsung deploy root project.
