@@ -1,0 +1,18 @@
+{
+  "name": "usk-majormatch",
+  "version": "1.0.0",
+  "description": "Static website tryout dan prediksi jurusan USK MajorMatch.",
+  "private": false,
+  "scripts": {
+    "dev": "python3 -m http.server 5173",
+    "start": "python3 -m http.server 5173"
+  },
+  "keywords": [
+    "usk",
+    "tryout",
+    "majormatch",
+    "static-site"
+  ],
+  "author": "",
+  "license": "MIT"
+}
