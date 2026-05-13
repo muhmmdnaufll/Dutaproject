@@ -35,7 +35,7 @@ body {
 }
 
 body::after {
-  content: "©Copyright 2026 Duta Caca";
+  content: "©Copyright 2026 USK MajorMatch";
   display: block;
   width: min(100%, 1180px);
   margin: 0 auto;
