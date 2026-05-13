@@ -6,7 +6,7 @@ const TOTAL = questions.length;
 const TOTAL_MINUTES = sections.reduce((sum, section) => sum + section.minutes, 0);
 
 function Logo() {
-  return <div className="brand-logo" aria-label="Anak Kandung USK untuk Masa Depan Aceh"><div className="brand-mark"><GraduationCap size={66} strokeWidth={1.8} /><div className="book-lines"><span /><span /><span /></div><strong>USK</strong><small>MAJORMATCH</small></div></div>;
+  return <div className="brand-logo" aria-label="USK MajorMatch"><div className="brand-mark"><GraduationCap size={66} strokeWidth={1.8} /><div className="book-lines"><span /><span /><span /></div><strong>USK</strong><small>MAJORMATCH</small></div></div>;
 }
 
 function formatTime(seconds) {
@@ -48,7 +48,7 @@ export default function App() {
   const startTryout = () => { setStartedAt(Date.now()); setCurrent(0); go('quiz'); };
   const restart = () => { setAnswers(Array(TOTAL).fill(null)); setCurrent(0); setStartedAt(Date.now()); go('quiz'); };
 
-  if (view === 'home') return <main className="page"><section className="card landing-card"><Logo /><h1 className="tagline">USK MajorMatch.</h1><p className="lead">Kerjakan tryout UTBK-SNBT: TPS, Literasi Bahasa Indonesia, Literasi Bahasa Inggris, dan Penalaran Matematika. Sistem menghitung estimasi skor 200-800, membaca kekuatan subtes, lalu menampilkan peta kelayakan jurusan USK berdasarkan target kompetitif.</p><div className="info-panel"><h2>Struktur Tryout</h2><ul><li><span>✓</span><p>{TOTAL} soal UTBK-SNBT 2026</p></li><li><span>✓</span><p>Durasi simulasi {TOTAL_MINUTES} menit dengan timer</p></li><li><span>✓</span><p>7 subtes: PU, PPU, PBM, PK, LBI, LBE, dan PM</p></li><li><span>✓</span><p>Peta jurusan memakai target skor, rasio persaingan, dan kategori Aman/Realistis/Ambisius/Berat</p></li></ul><SectionGrid /></div><button className="primary-btn home-btn" onClick={startTryout}>Mulai Tryout <ArrowRight size={38} /></button></section></main>;
+  if (view === 'home') return <main className="page"><section className="card landing-card"><Logo /><h1 className="tagline">Aneuk USK.><h1 className="tagline">USK MajorMatch.</h1><p className="lead">Kerjakan tryout UTBK-SNBT: TPS, Literasi Bahasa Indonesia, Literasi Bahasa Inggris, dan Penalaran Matematika. Sistem menghitung estimasi skor 200-800, membaca kekuatan subtes, lalu menampilkan peta kelayakan jurusan USK berdasarkan target kompetitif.</p><div className="info-panel"><h2>Struktur Tryout</h2><ul><li><span>✓</span><p>{TOTAL} soal UTBK-SNBT 2026</p></li><li><span>✓</span><p>Durasi simulasi {TOTAL_MINUTES} menit dengan timer</p></li><li><span>✓</span><p>7 subtes: PU, PPU, PBM, PK, LBI, LBE, dan PM</p></li><li><span>✓</span><p>Peta jurusan memakai target skor, rasio persaingan, dan kategori Aman/Realistis/Ambisius/Berat</p></li></ul><SectionGrid /></div><button className="primary-btn home-btn" onClick={startTryout}>Mulai Tryout <ArrowRight size={38} /></button></section></main>;
 
   if (view === 'quiz') {
     const q = questions[current];
