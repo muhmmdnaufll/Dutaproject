@@ -6,7 +6,7 @@ const TOTAL = questions.length;
 const TOTAL_MINUTES = sections.reduce((sum, section) => sum + section.minutes, 0);
 
 function Logo() {
-  return <div className="brand-logo" aria-label="USK MajorMatch"><div className="brand-mark"><GraduationCap size={66} strokeWidth={1.8} /><div className="book-lines"><span /><span /><span /></div><strong>USK</strong><small>MAJORMATCH</small></div></div>;
+  return <div className="brand-logo" aria-label="Anak Kandung USK untuk Masa Depan Aceh"><div className="brand-mark"><GraduationCap size={66} strokeWidth={1.8} /><div className="book-lines"><span /><span /><span /></div><strong>USK</strong><small>MAJORMATCH</small></div></div>;
 }
 
 function formatTime(seconds) {
